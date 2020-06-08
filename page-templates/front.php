@@ -9,7 +9,7 @@ get_header();
 <?php do_action('Nacelle_before_content'); ?>
 
 
-<div class="grid-x">
+<div class="grid-x front-page-template">
 	<div class="cell">
 
 
@@ -22,75 +22,80 @@ get_header();
 		$count = 0;
 		?>
 
-		<?php if ($image) : ?>
+		<?php // if ($image) : 
+		?>
 
-		<div class="splash">
-			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-		</div>
+		<!-- <div class="splash">
+				<img src="<?php // echo $image['url']; 
+							?>" alt="<?php // echo $image['alt']; 
+																?>" />
+			</div> -->
 
-		<?php elseif ($video_mp4) : ?>
+		<?php // if ($video_mp4) : 
+		?>
 
-		<div class="splash fade-in">
-			<?php
+		<!-- <div class="splash fade-in"> -->
+		<?php
 
-				// https://speckyboy.com/html5-video-wordpress-custom-fields/
-				// Get the Video Fields
+		// https://speckyboy.com/html5-video-wordpress-custom-fields/
+		// Get the Video Fields
 
-				// Build the  Shortcode
-				$attr =  array(
-					'mp4'      => $video_mp4,
-					'preload'  => 'auto',
-					'autoplay' => 'on'
-				);
+		// Build the  Shortcode
+		// $attr =  array(
+		// 	'mp4'      => $video_mp4,
+		// 	'preload'  => 'auto',
+		// 	'autoplay' => 'on'
+		// );
 
-				// Display the Shortcode
-				echo wp_video_shortcode($attr);
+		// // Display the Shortcode
+		// echo wp_video_shortcode($attr);
 
 
-				?>
-		</div>
-		<?php elseif ($iframe) : ?>
+		?>
+		<!-- </div> -->
+		<?php if ($iframe) : ?>
 
-		<div class="splash fade-in">
+			<div class="splash fade-in">
 
-			<div class="embed-container">
-
-				<?php
+				<div class="embed-container">
+					<?php echo $iframe; ?>	
+				<!-- <iframe src="https://player.vimeo.com/video/365579426?autoplay=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+					<?php
 
 					// use preg_match to find iframe src
-					preg_match('/src="(.+?)"/', $iframe, $matches);
-					$src = $matches[1];
+					// preg_match('/src="(.+?)"/', $iframe, $matches);
+					// $src = $matches[1];
 
 
-					// add extra params to iframe src
-					$params = array(
-						'controls'    => 0,
-						'hd'        => 1,
-						'autohide'    => 1,
-						'rel' => 0,
-						'modestbranding' => 1,
-						'autoplay' => 1
+					// // add extra params to iframe src
+					// $params = array(
+					// 	'loop' => 0,
+					// 	'autoplay' => 1,
+					// 	'title' => 0,
+					// 	'byline' => 0,
+					// 	'portrait' => 0,
+					// 	'gesture' => 'media',
+					// 	'muted' => 1
 
-					);
+					// );
 
-					$new_src = add_query_arg($params, $src);
+					// $new_src = add_query_arg($params, $src);
 
-					$iframe = str_replace($src, $new_src, $iframe);
+					// $iframe = str_replace($src, $new_src, $iframe);
+
+					// // add extra attributes to iframe html
+					// // $attributes = 'allowfullscreen muted allow="autoplay"';
+
+					// $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
 
-					// add extra attributes to iframe html
-					$attributes = 'frameborder="0"';
-
-					$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
-
-
-					// echo $iframe
-					echo $iframe;
+					// // echo $iframe
+					// echo $iframe;
 
 					?>
+				</div>
+				<script src="https://player.vimeo.com/api/player.js"></script>
 			</div>
-
-		</div>
 
 		<?php else : ?>
 
@@ -116,24 +121,25 @@ get_header();
 		</script>
 
 		<?php while (have_posts('')) : the_post(); ?>
-		<?php get_template_part('template-parts/clean-hero-slider'); ?>
+			<?php get_template_part('template-parts/clean-hero-slider'); ?>
 
-		<div class="circle-slider orbit" role="region" aria-label="Nacelle News Slider" data-orbit data-auto-play="false" data-use-m-u-i="false">
+			<div class="circle-slider orbit mb-4" role="region" aria-label="Nacelle News Slider" data-orbit data-auto-play="false" data-use-m-u-i="false">
 
-			<ul class="orbit-container" id="circle-posts">
+				<ul class="orbit-container" id="circle-posts">
 
-				<div class="grid-x background-slide-container orbit-group">
-					<div class="small-12 medium-4 large-4 press-title-background columns">
-						<img src="<?php bloginfo('template_directory'); ?>/dist/assets/images/news-slider-title-bkgnd.png" alt="press title background" />
+					<div class="grid-x background-slide-container orbit-group">
+						<div class="small-12 medium-4 large-4 press-title-background columns">
+							<!-- <img src="<?php //bloginfo('template_directory'); 
+											?>/dist/assets/images/news-slider-title-bkgnd.png" alt="press title background" /> -->
 
+						</div>
 					</div>
-				</div>
 
-				<?php get_template_part('template-parts/circle-slider'); ?>
+					<?php get_template_part('template-parts/circle-slider'); ?>
 
-			</ul>
+				</ul>
 
-		</div>
+			</div>
 		<?php endwhile; ?>
 		<!-- END LOOP -->
 

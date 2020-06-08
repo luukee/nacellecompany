@@ -12,19 +12,21 @@
 
         <div class="grid-x grid-padding-x">
 
-            <div class="cell medium-6 section-title">
+            <div class="cell medium-12 section-title">
 
                 <h2><?php the_field("nacelle_catalog_title"); ?></h2>
 
             </div>
 
-            <div class="cell auto sorting">
+            <!-- <div class="cell auto sorting">
 
-                <h4><?php _e('Sort by', 'nacelle'); ?></h4>
+                <h4><?php // _e('Sort by', 'nacelle'); 
+                    ?></h4>
 
-                <?php echo do_shortcode('[searchandfilter slug="production-filters"]'); ?>
+                <?php // echo do_shortcode('[searchandfilter slug="production-filters"]'); 
+                ?>
 
-            </div>
+            </div> -->
 
         </div>
 
@@ -59,12 +61,22 @@
                     $img_size_md = 'fp-medium';
                     $img_size_sm = 'fp-small';
 
-                    $hero_image = get_field('square_image');
+                    $imageSquare = get_field('square_image');                        // Catalog Image
+                    // $imageHorizontalYES = get_field('custom_square_image_yes');   // QUESTION Custom Image?
+                    $imageHorizontal = get_field('horizontal_image');          // Custom Image
+
+                    $imageSquareAlt = $imageSquare['alt']; /* Get image object alt */
+                    $imageHorizontalAlt = $imageHorizontal['alt'];
 
                     /* Get custom sizes of our image sub_field */
-                    $hero_lg = $hero_image['sizes'][$img_size_lg];
-                    $hero_md = $hero_image['sizes'][$img_size_md];
-                    $hero_sm = $hero_image['sizes'][$img_size_sm];
+                    $imageSquareLG = $imageSquare['sizes'][$img_size_lg];
+                    $imageSquareMD = $imageSquare['sizes'][$img_size_md];
+                    $imageSquareSM = $imageSquare['sizes'][$img_size_sm];
+
+                    // custom featured image
+                    $imageHorizontalLG = $imageHorizontal['sizes'][$img_size_lg];
+                    $imageHorizontalMD = $imageHorizontal['sizes'][$img_size_md];
+                    $imageHorizontalSM = $imageHorizontal['sizes'][$img_size_sm];
 
                     ?>
 
@@ -75,13 +87,36 @@
                             <div class="callout-body">
 
                                 <!-- IMAGE -->
-                                <?php if (!empty('square_image')) : ?>
-                                    <div class="img-container">
-                                        <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-                                            <img class=" feat-pg" data-interchange="[<?php echo $hero_sm; ?>, small], [<?php echo $hero_md; ?>, medium], [<?php echo $hero_lg; ?>, large]" />
+
+
+                                <div class="img-container">
+
+
+                                    <?php if ($imageHorizontal) : ?>
+
+                                        <a href="<?php the_permalink() ?>" class="catalog-title" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+
+                                            <img class="feat-pg horizontal" data-interchange="[<?php echo $imageHorizontalSM; ?>, default], [<?php echo $imageHorizontalSM; ?>, small], [<?php echo $imageHorizontalMD; ?>, medium], [<?php echo $imageHorizontalLG; ?>, large]" alt="<?php echo $imageHorizontalAlt; ?>" />
+                                            <noscript>
+                                                <img src="<?php echo $imageHorizontalSM; ?>" alt="<?php echo $imageHorizontalAlt; ?>" />
+                                            </noscript>
                                         </a>
-                                    </div>
-                                <?php endif; ?>
+
+                                    <?php else : ?>
+
+                                        <a href="<?php the_permalink() ?>" class="catalog-title" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+
+                                            <img class="feat-pg" data-interchange="[<?php echo $imageSquareSM; ?>, small], [<?php echo $imageSquareMD; ?>, medium], [<?php echo $imageSquareLG; ?>, large]" alt="<?php echo $imageSquareAlt; ?>" />
+                                            <noscript>
+                                                <img src="<?php echo $imageSquareSM; ?>" alt="<?php echo $imageSquareAlt; ?>" />
+                                            </noscript>
+                                        </a>
+
+                                    <?php endif; ?>
+
+                                </div>
+
+
 
                             </div>
 
@@ -93,12 +128,9 @@
                                 <a href="<?php the_permalink() ?>" class="catalog-title" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
                                     <h3><?php the_title(); ?></h3>
                                 </a>
-                                <p>
-
+                                <div class="callout-content">
                                     <?php the_content(); ?>
-
-                                </p>
-
+                                </div>
                             </div>
 
                         </div>
@@ -106,7 +138,7 @@
 
                     </div>
 
-                    <?php $counter++;
+            <?php $counter++;
                 }
                 wp_reset_postdata();
             } ?>

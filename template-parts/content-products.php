@@ -24,7 +24,7 @@
 	<div class="entry-content">
 
         <div class="grid-x">
-            <div class="cell medium-12 large-8 nacelle-products">
+            <div class="cell medium-12 nacelle-products">
                 <div class="embed-container" data-open="productsModal">
                     <?php the_field('featured_video'); ?>
                     <div class="overlay">
@@ -33,13 +33,16 @@
                 </div>
 				<?php get_template_part( 'template-parts/content-catalog_archives', 'page' ); ?>
             </div>
-            <div class="cell medium-12 large-4 comedy-dynamics">
+
+            <!-- get CD column back: uncomment below & add "large-8" to "nacelle-products" above -->
+            <!-- <div class="cell medium-12 large-4 comedy-dynamics">
                 <iframe id="comedy-dynamics"
                     title="Comedy Dynamics"
                     frameborder="0"
-                    src="<?php the_field('comedy_dynamics'); ?>?controls=0">
+                    src="<?php //the_field('comedy_dynamics'); ?>?controls=0">
                 </iframe>
-            </div>
+            </div> -->
+            
         </div>
 
 		<?php the_content(); ?>

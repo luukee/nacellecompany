@@ -100,7 +100,7 @@
 
                                 <div class="cell medium-12 large-7">
 
-                                    <div class="grid-x small-up-2 medium-up-3 large-up-4 align-center align-middle pt-medium-3 pb-medium-1 grid-padding-x">
+                                    <div class="grid-x small-up-2 medium-up-3 large-up-3 align-center align-middle pt-medium-3 pb-medium-1 grid-padding-x">
 
                                         <?php while (have_rows('logo_repeater02')) : the_row();
 

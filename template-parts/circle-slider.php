@@ -6,33 +6,39 @@ if ($post_objects) : ?>
     <?php foreach ($post_objects as $post_object) : ?>
 
         <li class="orbit-slide orbit-group">
-            <div class="grid-x">
+            <div class="grid-x circle-orbit-slider-container">
 
-                <div class="small-8 medium-4 large-4 press-title-container columns">
+                <div class="small-11 medium-4 large-4 press-title-container columns">
 
                     <?php
 
-                    $link = get_field('link_to_article', $post_object->ID);
+                            $link = get_field('link_to_article', $post_object->ID);
 
-                    if ($link) :
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
+                            if ($link) :
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : '_self';
+        
+                                ?>
+
+                    <?php endif; ?>
+
+                    <div class="press-title-inner-container">
                         <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?>
-                        <?php endif; ?>
-
-                        <div class="press-title-inner-container">
-                            <?php echo get_field('title', $post_object->ID); ?>
-                            <h5> | <?php
+                        <br><br>    
+                        <?php echo get_field('title', $post_object->ID); ?>
+                                <br>
+                            <span class="press-category">| 
+                                <?php 
                                     $categories = get_the_category($post_object->ID);
 
                                     if (!empty($categories)) {
                                         echo esc_html($categories[0]->name);
                                     }
-                                    ?></h5>
-                        </div>
-                    </a>
+                                ?>
+                            </span>
+                        </a>
+                    </div>
                 </div>
 
 
