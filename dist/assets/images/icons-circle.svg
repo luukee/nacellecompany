@@ -1,1 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="819" height="821"><defs><path d="M629.954 70l-50.676 87.725C706.922 245.93 747.16 420.208 667.61 557.914 588.062 695.62 416.93 747.93 276.676 681.554L226 769.277c188.298 93.873 421.052 24.751 528.49-161.232 107.436-185.982 50.954-422-124.536-538.045" id="b"/><filter x="-1.4%" y="-.9%" width="102.7%" height="102.2%" id="a"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/><feMorphology radius="1" in="SourceAlpha" result="shadowSpreadOuter2"/><feOffset dy="3" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/><feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter2" result="shadowBlurOuter2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter3"/><feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" in="shadowBlurOuter3" result="shadowMatrixOuter3"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="shadowMatrixOuter2"/><feMergeNode in="shadowMatrixOuter3"/></feMerge></filter><path d="M179.046 741l50.676-87.724c-127.644-88.207-167.883-262.485-88.334-400.19C220.938 115.38 392.07 63.07 532.324 129.446L583 41.723C394.702-52.15 161.948 16.972 54.51 202.956-52.927 388.938 3.556 624.956 179.046 741" id="d"/><filter x="-1.4%" y="-.9%" width="102.7%" height="102.2%" id="c"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/><feMorphology radius="1" in="SourceAlpha" result="shadowSpreadOuter2"/><feOffset dy="3" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/><feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter2" result="shadowBlurOuter2"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter3"/><feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" in="shadowBlurOuter3" result="shadowMatrixOuter3"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="shadowMatrixOuter2"/><feMergeNode in="shadowMatrixOuter3"/></feMerge></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(5 4)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#2A2D2F" xlink:href="#b"/></g><g transform="translate(5 4)"><use fill="#000" filter="url(#c)" xlink:href="#d"/><use fill="#2A2D2F" xlink:href="#d"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="819" height="821">
+  <defs>
+    <path d="M629.954212 70l-50.676362 87.724862c127.643952 88.205284 167.882358 262.483394 88.333376 400.189085-79.548981 137.70569-250.68136 190.015583-390.935558 123.639651L226 769.277258c188.298012 93.872539 421.05166 24.751121 528.489408-161.232269C861.926461 422.062801 805.444095 186.04444 629.954212 70" id="b"/>
+    <filter x="-1.4%" y="-.9%" width="102.7%" height="102.2%" id="a">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMorphology radius="1" in="SourceAlpha" result="shadowSpreadOuter2"/>
+      <feOffset dy="3" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+      <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter3"/>
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" in="shadowBlurOuter3" result="shadowMatrixOuter3"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+        <feMergeNode in="shadowMatrixOuter3"/>
+      </feMerge>
+    </filter>
+    <path d="M179.046164 741l50.675621-87.72377c-127.643628-88.206879-167.8823834-262.485429-88.33417-400.19009 79.549601-137.707064 250.682207-190.0167995 390.93607-123.6393L583 41.7218681C394.701999-52.1492811 161.948038 16.9719191 54.5103902 202.955541-52.926564 388.937962 3.55627938 624.956922 179.046164 741" id="d"/>
+    <filter x="-1.4%" y="-.9%" width="102.7%" height="102.2%" id="c">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMorphology radius="1" in="SourceAlpha" result="shadowSpreadOuter2"/>
+      <feOffset dy="3" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+      <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter3"/>
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter3" result="shadowBlurOuter3"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" in="shadowBlurOuter3" result="shadowMatrixOuter3"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+        <feMergeNode in="shadowMatrixOuter3"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(5 4)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#2A2D2F" xlink:href="#b"/>
+    </g>
+    <g transform="translate(5 4)">
+      <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+      <use fill="#2A2D2F" xlink:href="#d"/>
+    </g>
+  </g>
+</svg>

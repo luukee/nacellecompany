@@ -53,7 +53,7 @@ get_header(); ?>
 					<article class="article-row <?php echo $even_odd_class; ?>" id="post-<?php the_ID(); ?>">
 
 						<div class="article-row-img">
-							<a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+							<a href="<?php echo esc_url($link_url); ?>" target="_blank">
 
 								<?php the_post_thumbnail('rta_thumb_cropped_240x240'); ?>
 							</a>

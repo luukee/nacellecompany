@@ -20,6 +20,16 @@ get_header();
 		$video_mp4 =  get_field('splash');
 		$iframe =  get_field('embed_video');
 		$count = 0;
+		// // Build the  Shortcode
+		// $attr =  array(
+		// 	'mp4'      => $video_mp4,
+		// 	// 'webm'     => $video_webm,
+		// 	// 'flv'      => $video_flv,
+		// 	// 'poster'   => $video_poster,
+		// 	'preload'  => 'auto',
+		// 	'autoplay' => 'on'
+		// );
+
 		?>
 
 		<?php // if ($image) : 
@@ -28,7 +38,7 @@ get_header();
 		<!-- <div class="splash">
 				<img src="<?php // echo $image['url']; 
 							?>" alt="<?php // echo $image['alt']; 
-																?>" />
+										?>" />
 			</div> -->
 
 		<?php // if ($video_mp4) : 
@@ -53,13 +63,14 @@ get_header();
 
 		?>
 		<!-- </div> -->
-		<?php if ($iframe) : ?>
+		<?php // if ($iframe) : ?>
 
 			<div class="splash fade-in">
 
 				<div class="embed-container">
-					<?php echo $iframe; ?>	
-				<!-- <iframe src="https://player.vimeo.com/video/365579426?autoplay=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+					<?php // Display the Shortcode
+					the_field('embed_video'); ?>
+					<!-- <iframe src="https://player.vimeo.com/video/365579426?autoplay=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
 					<?php
 
 					// use preg_match to find iframe src
@@ -97,9 +108,9 @@ get_header();
 				<script src="https://player.vimeo.com/api/player.js"></script>
 			</div>
 
-		<?php else : ?>
+		<?php //else : ?>
 
-		<?php endif; ?>
+		<?php //endif; ?>
 
 		<script>
 			let splash = document.querySelector(".splash");

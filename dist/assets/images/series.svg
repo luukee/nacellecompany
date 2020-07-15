@@ -1,1 +1,17 @@
-<svg width="29" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M16.927 0H2.407C1.077 0 0 1.115 0 2.49v15.02C0 18.885 1.077 20 2.407 20h14.52c1.329 0 2.406-1.115 2.406-2.49V2.49c0-1.375-1.077-2.49-2.406-2.49zm9.438 1.943l-5.443 3.949v8.22l5.443 3.944c1.053.763 2.503-.016 2.503-1.347V3.29c0-1.327-1.445-2.11-2.503-1.348z" fill="#7FD2E6"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="20px" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>luke-carl-hartman-web-development-for-denali-innovationsvideo-solid</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Catalog" transform="translate(-1328.000000, -151.000000)" fill="#7FD2E6">
+            <g id="Group-9" transform="translate(1328.000000, 146.000000)">
+                <g id="video-solid" transform="translate(0.000000, 5.000000)">
+                    <g id="Shape">
+                        <path d="M16.9267361,0 L2.40659722,0 C1.07743056,0 0,1.11458333 0,2.48958333 L0,17.5104167 C0,18.8854167 1.07743056,20 2.40659722,20 L16.9267361,20 C18.2559028,20 19.3333333,18.8854167 19.3333333,17.5104167 L19.3333333,2.48958333 C19.3333333,1.11458333 18.2559028,0 16.9267361,0 Z M26.3648402,1.94313337 L20.9223744,5.89170695 L20.9223744,14.1126789 L26.3648402,18.0560295 C27.4175799,18.8185847 28.8675799,18.0403606 28.8675799,16.7085004 L28.8675799,3.29066245 C28.8675799,1.9640253 27.4225457,1.18057816 26.3648402,1.94313337 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
