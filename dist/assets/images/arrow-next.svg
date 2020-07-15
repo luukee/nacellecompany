@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="37px" height="19px" viewBox="0 0 37 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Film-Work-Page-Copy-2" transform="translate(-1481.000000, -509.000000)" fill="#D39A00">
-            <g id="arrow-next" transform="translate(1481.000000, 509.000000)">
-                <path d="M25.9281195,6.04876641 L0.991069769,6.04876641 C0.443751489,6.04876641 0,6.51234757 0,7.08412355 L0,11.9157902 C0,12.4875661 0.443751489,12.9511473 0.991069769,12.9511473 L25.9281195,12.9511473 L25.9281195,16.9251068 C25.9281195,18.7699407 28.0631316,19.6938244 29.3118795,18.3893607 L36.4194189,10.9642107 C37.193527,10.1555105 37.193527,8.84440323 36.4194189,8.03578931 L29.3118795,0.610639347 C28.0632142,-0.693824362 25.9281195,0.230059321 25.9281195,2.07489317 L25.9281195,6.04876641 Z" id="Path"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="37" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M25.928 6.049H.991C.444 6.049 0 6.512 0 7.084v4.832c0 .572.444 1.035.991 1.035h24.937v3.974c0 1.845 2.135 2.769 3.384 1.464l7.107-7.425a2.137 2.137 0 0 0 0-2.928L29.312.61c-1.249-1.305-3.384-.38-3.384 1.464v3.974z" fill="#D39A00" fill-rule="evenodd"/></svg>

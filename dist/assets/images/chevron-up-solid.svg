@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="13px" viewBox="0 0 20 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
-    <title>luke-carl-hartman-web-development-for-denali-innovationschevron-up-solid</title>
-    <desc>Created with Sketch.</desc>
-    <g id="chevron-up-solid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g fill="#FFFFFF" fill-rule="nonzero" id="Path">
-            <path d="M10.7749315,0.343561644 L19.6490411,9.21767123 C20.077032,9.6456621 20.077032,10.3395434 19.6490411,10.7674886 L18.6140183,11.8025114 C18.186758,12.2297717 17.4942922,12.2305936 17.0660274,11.8043379 L10,4.77146119 L2.93401826,11.8043836 C2.50575342,12.2306393 1.81328767,12.2298174 1.3860274,11.8025571 L0.351004566,10.7675342 C-0.0769863014,10.3395434 -0.0769863014,9.6456621 0.351004566,9.21771689 L9.22511416,0.343607306 C9.65305936,-0.0843835616 10.3469406,-0.0843835616 10.7749315,0.343561644 Z"></path>
-        </g>
-    </g>
-</svg>
+<svg width="20" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M10.775.344l8.874 8.874a1.096 1.096 0 0 1 0 1.55l-1.035 1.035a1.096 1.096 0 0 1-1.548.001L10 4.771l-7.066 7.033a1.096 1.096 0 0 1-1.548-.001L.351 10.768a1.096 1.096 0 0 1 0-1.55L9.225.344a1.096 1.096 0 0 1 1.55 0z" fill="#FFF"/></svg>
